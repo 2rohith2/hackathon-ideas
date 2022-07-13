@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BannerImage from '../../assests/images/3characters.png';
+import BannerImage from '../../assests/3characters.png';
 import './index.scss';
 
 interface Props {
