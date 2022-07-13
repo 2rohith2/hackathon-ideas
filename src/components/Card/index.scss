@@ -1,0 +1,154 @@
+.card-container {
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  top: 0px;
+  opacity: 90%;
+  display: flex;
+  visibility: hidden;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-transition: all 0.5s 0s ease-in;
+  -moz-transition: all 0.5s 0s ease-in;
+  -o-transition: all 0.5s 0s ease-in;
+  transition: all 0.5s 0s ease-in;
+
+  .card__vote__icon {
+    font-size: 80px;
+    cursor: default;
+    color: white;
+  }
+}
+
+.show {
+  visibility: visible;
+  -webkit-transition: all 0.5s 0s ease-in;
+  -moz-transition: all 0.5s 0s ease-in;
+  -o-transition: all 0.5s 0s ease-in;
+  transition: all 0.5s 0s ease-in;
+}
+
+.card-overlay-dislike {
+  @extend .card-overlay;
+  background-color: #e33d65;
+}
+
+.card-overlay-like {
+  @extend .card-overlay;
+  background-color: #88b254;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  min-height: fit-content;
+
+  &__title {
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+
+    &:first-letter {
+      text-transform: capitalize
+    }
+  }
+
+  &__desc {
+    font-size: 16px;
+    text-align: justify;
+    color: gray;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4px;
+    row-gap: 4px;
+  }
+
+  &__tag {
+    font-size: 12px;
+    background-color: #fd86ae;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+    text-transform: capitalize;
+  }
+
+  &__user-details {
+    width: 130px;
+  }
+
+  &__user {
+    cursor: default;
+    margin-top: 20px;
+    display: flex;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+
+      img {
+        border-radius: 20px;
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    &__name {
+      font-family: Inter;
+      font-size: 14px;
+      text-transform: capitalize;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__time {
+      font-size: 14px;
+      color: gray;
+    }
+  }
+
+  &__vote {
+    display: flex;
+    margin-left: 10px;
+
+    &__container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__count {
+      margin-top: -6px;
+      color: gray;
+      font-size: 14px;
+    }
+
+    :nth-child(2) {
+      margin-right: 0px;
+    }
+
+    &__icon {
+      cursor: pointer;
+      font-size: 30px;
+      // margin-right: 10px;
+    }
+  }
+}
