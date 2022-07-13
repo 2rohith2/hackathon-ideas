@@ -19,7 +19,7 @@ Start the server
   npm run start
 ```
 
-Link to access
+Link to access - please run only on the port 3000
 ```bash
   http://localhost:3000
 ```
