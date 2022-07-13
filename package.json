@@ -1,20 +1,31 @@
 {
   "name": "hackathon-ideas",
-  "version": "0.1.0",
+  "author": {
+    "name": "Rohith Kumar E S",
+    "email": "rohith_kumar222@hotmail.com",
+    "url": "https://github.com/2rohith2/"
+  },
+  "version": "1.0.0",
   "private": true,
+  "description": "Hack Ideas is a digital product where employees of an organization can login & create challenges for hackathons",
   "dependencies": {
+    "moment": "^2.29.3",
+    "react": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.43",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@types/react": "^18.0.14",
+    "@types/react-router-dom": "^5.3.3",
+    "eslint": "^8.19.0",
+    "eslint-plugin-react": "^7.30.1",
+    "node-sass": "^7.0.1",
     "react-scripts": "5.0.1",
-    "typescript": "^4.7.4",
-    "web-vitals": "^2.1.4"
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
