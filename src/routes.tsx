@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginContainer from './LoginContainer';
 import HackathonsContainer from './HackathonsContainer';
 
-export default function he(): JSX.Element {
+export default function RoutesContainer(): JSX.Element {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/hackathon-ideas'>
       <Routes>
         <Route path='/' element={<LoginContainer />} />
         <Route path='/login' element={<LoginContainer />} />

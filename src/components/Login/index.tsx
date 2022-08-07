@@ -26,21 +26,24 @@ export default function LoginComponent(props: Props): JSX.Element {
               <input
                 type='text'
                 className='form-control'
-                onChange={(event):void => setEmployeeId(event.target.value)}
+                onChange={(event): void => setEmployeeId(event.target.value)}
               />
               <small className='form-text text-muted'>Login with Employee ID</small>
             </div>
-            <button
-              type='submit'
-              className='btn btn-primary'
-              onClick={(event): void => {
-                event.stopPropagation();
-                event.preventDefault();
-                props.validateUser(employeeId);
-              }}
-            >
-              Login <i className='bi bi-box-arrow-in-right' />
-            </button>
+            <div className='login_container__submit'>
+              <button
+                type='submit'
+                className='btn btn-primary'
+                onClick={(event): void => {
+                  event.stopPropagation();
+                  event.preventDefault();
+                  props.validateUser(employeeId);
+                }}
+              >
+                Login <i className='bi bi-box-arrow-in-right' />
+              </button>
+              <small className='form-text text-muted'>Click on the button to proceed.</small>
+            </div>
           </form>
         </div>
         <img className='login_container--banner' src={BannerImage} alt='' />
